@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <a href="http://127.0.0.1:8000/platform">{{ platform }}</a>
+    <a href="http://127.0.0.1:8000/platform/games">{{ shop }}</a>
+    <a href="http://127.0.0.1:8000/platform/cart">{{ cart_n }}</a>
+    <ul>
+        {% for i in games %}
+            <li>{{ i }}<button>Купить</button></li>
+        {% endfor %}
+    </ul>
+    <button><a href="http://127.0.0.1:8000/platform">Вернуться обратно</a></button>
+</body>
+</html>
